@@ -1108,6 +1108,9 @@ margin-bottom: 90px;
 	.footer p {
 		padding: 0 10px;
 	}
+	.section-one-text {
+		margin: 7px;
+	}
 }
 
 @media (max-width: 577px) {
@@ -1252,6 +1255,10 @@ color: #FFFFFF;
 	.footer a, .footer p {
 		padding: 10px 0;
 		font-size: 8px;
+	}
+
+	.fa-star {
+		margin-right: 6px;
 	}
 
 	
