@@ -16,7 +16,11 @@
     <header class="header">
         <div class="nav-menu">
           <div class="btn-container">
-            <button class="menu-btn"></button>
+            <button class="menu-btn">
+              <span class="menu-btn-span1"></span>
+              <span class="menu-btn-span2"></span>
+              <span class="menu-btn-span3"></span>
+            </button>
           </div>
           <div class="navbar-container container">
             <nav class="navbar">
@@ -52,7 +56,7 @@
         </div>
         <div class="line">
         </div>
-        <div class="contacts-icons">
+        <div class="contacts-icons dsp">
           <div class="icons">
             <a href="#">
               <i class="fab fa-instagram"></i>
@@ -203,28 +207,28 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide section-four-slide">
                 <img src="img/logo.svg" alt="logo">
               </div>
             </div>
@@ -311,6 +315,7 @@ window.onscroll = function () {
 let menuOpen = false;
 menuBtnOpen.addEventListener('click', ()=>{
    if(!menuOpen){
+    body.classList.add('body-hiden')
       navBar.classList.add('show');
       contIcons.classList.add('show-icons');
       phoneNumber.classList.add('opacity');
@@ -321,6 +326,7 @@ menuBtnOpen.addEventListener('click', ()=>{
 
 menuBtnClose.addEventListener('click', ()=>{
    if(menuOpen){
+     body.classList.remove('body-hiden')
       navBar.classList.remove('show');
       phoneNumber.classList.remove('opacity');
       contIcons.classList.remove('show-icons');
